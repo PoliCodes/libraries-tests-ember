@@ -1,5 +1,25 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
+{{!--{{welcome-page}}--}}
 {{!-- Feel free to remove this! --}}
 
+<section> 
+    <div id="app">   
+        <h1>TODO LIST EMBER</h1>
+        <div class="insertItem">
+            <input id="new-todo" type="text">   
+            <input type="button" value="OK">
+        </div>
+        <div class="itemsList">
+            <ul>
+                <li>
+                    <input type="button" value="x">&nbsp;
+                </li>
+            </ul>
+        </div>
+    </div>
+
 {{outlet}}
+</section>
+
+
+
