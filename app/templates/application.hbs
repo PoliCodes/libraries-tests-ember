@@ -1,25 +1,17 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{!--{{welcome-page}}--}}
-{{!-- Feel free to remove this! --}}
-
 <section> 
     <div id="app">   
         <h1>TODO LIST EMBER</h1>
         <div class="insertItem">
-            <input id="new-todo" type="text">   
-            <input type="button" value="OK">
+           <input  id="description" type="text"> 
+            {{!--{{input type="text" valueBinding="description"}}--}}
+            <input type="button" value="OK" {{action 'newItem'}}>
         </div>
         <div class="itemsList">
             <ul>
                 <li>
-                    <input type="button" value="x">&nbsp;
+                    <input type="button" value="x" {{action 'deleteItem'}}>&nbsp;
                 </li>
             </ul>
         </div>
     </div>
-
-{{outlet}}
 </section>
-
-
-
